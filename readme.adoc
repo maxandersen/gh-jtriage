@@ -1,0 +1,8 @@
+# gh-jtriage
+
+JBang version of the https://github.com/samcoe/gh-triage plugin
+to show how to write GitHub CLI plugins in Java.
+
+Installation: `gh extension install maxandersen/gh-jtriage`
+
+Usage: `gh jtriage`
