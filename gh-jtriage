@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+extensionPath="$(dirname "$0")"
+
+ #Determine if an executable is in the PATH
+ if ! type -p jbang >/dev/null; then
+   echo "jbang missing - installing" >&2
+   curl -Ls https://sh.jbang.dev | bash -s - app setup
+ fi
+
+jbang ${extensionPath}/jtriage.java "$@"
